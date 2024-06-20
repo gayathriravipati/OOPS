@@ -2,6 +2,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+//Orders pizza and return the cost of the order based on base and toppingds selected
+
 class Base {
     private String baseName;
     private Double cost;
