@@ -1,0 +1,32 @@
+Learnings:
+
+Singleton Design Pattern:
+In the case of vending machine design - there will be only one user at a time purchasing products.
+So we can opt for Singleton design pattern which creates only one instance of a class at a time.
+
+Notice on how we created an instance of the class - InitialiseVendingMachine
+
+Using a ConcurrentHashMap:
+We chose ConcurrentHashMap instead of a normal HashMap thinking of a real world scenario where even if only single
+user can access the machine at a time there can be background processes like restocking inventory, updating prices, or performing maintenance checks. 
+And the vending Machine server might be connected to the central logging system.
+
+As these background processes cannot be put on hold, we consider the need for concurrency in this case.
+
+Imagine the price update and purchase products happening simultaneously.
+
+
+Enum class:
+Here we used Amount as Enum class. We can consider having all the constants of different value which belongs to the same
+category can be added here.
+
+Enums in Java can also contain fields, constructors, and methods.
+
+Exception Handling:
+How to raise unchecked exceptions - extending exception class
+and how to handle them using try and catch
+
+Utility class:
+Utility Classes: These classes contain static methods and constants and provide common functionalities that do not require object instantiation.
+Accessing Utility Classes: You can access and use utility classes in any other file by importing the respective utility class and calling its static methods.
+Directory Structure: Ensure that your utility classes are properly organized and can be imported into other classes.
