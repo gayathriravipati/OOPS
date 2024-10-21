@@ -3,7 +3,7 @@ import java.io.*;
 import java.nio.file.*;
 import java.util.stream.*;
 
-// Given a directory - search for the folder in the given directory based on the filers of name / size/ extension
+// Given a directory - search for the folder in the given directory based on the filters of name / size/ extension
 // Also if given multiple filters => Implementation of andFilter
 
 
